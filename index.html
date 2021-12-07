@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<form>
+  <fieldset>
+    <legend>Jason's form</legend>
+    <div>
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+      />
+    </div>
+    <div>
+      <label for="form message">Email:</label>
+        <input
+        id="form message"
+        name="message"
+        required
+        maxlength="200"
+        />
+    </div>
+    <div>
+      <label for="phone">Phone #:</label>
+      <input
+        id="phone"
+        type="text"
+        name="phone"
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        placeholder="xxx-xxx-xxxx"
+      />
+    </div>
+    <div>
+      <h2>Your favorite things about Jason:</h2>
+      <div>
+        <input name="eyes" type="checkbox" id="eyes" />
+        <label for="eyes">eyes</label>
+      </div>
+      <div>
+        <input name="hair" type="checkbox" id="hair" />
+        <label for="hair">hair</label>
+      </div>
+      <div>
+        <input name="personality" type="checkbox" id="personality" />
+        <label for="personality">personality</label>
+      </div>
+    </div>
+  <div>
+    <label for="form-message">Your message:</label>
+    <textarea
+      id="form-message"
+      name="message"
+      autofocus="on"
+      required
+      maxlength="200"
+    ></textarea>
+  </div>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+  <body>
+    <main></main>
+  </body>
+</html>
